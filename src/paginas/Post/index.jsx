@@ -10,6 +10,10 @@ export default function Post() {
         return post.id === Number(parametros.id);
     });
 
+    // Se o post for undefined, o código abaixo será executado!
+    if (!post) {
+        return <h1>Post não encontrado!</h1>;
+    }
     return (
         <PostModelo
             fotoCapa={`/assets/posts/${post.id}/capa.png`}
