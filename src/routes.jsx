@@ -15,8 +15,8 @@ function AppRoutes() {
                 <Route path="/" element={<PaginaPadrao />}>
                     <Route index element={<Inicio />} />
                     <Route path="sobremim" element={<SobreMim />} />
-                    <Route path="posts/:id" element={<Post />} />
                 </Route>
+                <Route path="posts/:id" element={<Post />} />
                 {/* Demonstração do uso de <Outlet / no index.jsx da <PaginaPadra />>
                 
                     Na rota "/", a estrutura a ser renderizada é:
