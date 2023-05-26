@@ -19,18 +19,7 @@ function AppRoutes() {
                     <Route path="sobremim" element={<SobreMim />} />
                 </Route>
                 <Route path="posts/:id/*" element={<Post />} />
-                {/* Demonstração do uso de <Outlet / no index.jsx da <PaginaPadra />>
-                
-                    Na rota "/", a estrutura a ser renderizada é:
-                    <PaginaPadrao>
-                        <Inicio />
-                    <PaginaPadrao />
 
-                    Na rota "/sobremim", a estrutura a ser renderizada é:
-                    <PaginaPadrao>
-                        <Sobremim />
-                    <PaginaPadrao />
-                */}
                 <Route path="*" element={<NaoEncontrada />} />
             </Routes>
             <Rodape />
